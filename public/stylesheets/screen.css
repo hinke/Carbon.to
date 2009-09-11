@@ -1,0 +1,120 @@
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin:0;
+  padding:0;
+  background: #F5F5F5;
+  font-size: 12px;
+}
+
+h1{
+}
+
+#container{
+  position: relative;
+  margin: 0 auto;
+  width: 980px;
+}
+
+#equal{
+  position:absolute;
+  font-size: 150px;
+  font-weight: bold;
+  top: 98px;
+  left: 444px;
+}
+
+.converter{
+  position:relative;
+  width: 400px;
+  height: 300px;
+}
+
+.converter ul.add-subtract{
+  position:absolute;
+  margin: 0;
+  padding: 0;
+  list-style:none;
+}
+
+#left ul.add-subtract{
+  top:20px;
+  left: 367px;
+}
+#right ul.add-subtract{
+  
+}
+.converter ul.add-subtract li{
+  width: 25px;
+  height: 25px;
+  margin: 0 0 3px 0;
+  background: #ACACAC;
+  color:black;
+  text-align:center;
+  font-weight: bold;
+  font-size: 16px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  cursor:pointer;
+}
+.converter .inner-converter{
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  background: #d1d1d1;
+}
+.converter .inner-converter .number{
+  width:100%;
+  font-size: 150px;
+  font-weight:bold;
+  text-align:center;
+  text-shadow: 0 0 3px black;  
+}
+.converter .inner-converter .unit{
+  width:100%;
+  font-size: 72px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.converter .inner-converter .unit span{
+  font-size: 30px;
+}
+
+.converter .conversions{
+  width: 100%;
+  height:0;
+  background: #d1d1d1;
+}
+.converter .toggle-conversions{
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  background: #ACACAC url(/images/arrow-down.png) no-repeat 195px 6px;
+  height: 25px;
+  width:100%;
+}
+
+.converter .toggle-conversions:hover{
+  background: #8A8A8A url(/images/arrow-down.png) no-repeat 195px 6px;
+  cursor:pointer;
+}
+
+.converter .toggle-conversions.opened{
+  background: #8A8A8A url(/images/arrow-up.png) no-repeat 195px 6px;
+}
+.converter .toggle-conversions.opened:hover{
+  background: #8A8A8A url(/images/arrow-up.png) no-repeat 195px 6px;
+  
+}
+
+#left{
+  float:left;
+}
+
+#right{
+  float:right;
+}
