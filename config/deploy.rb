@@ -25,6 +25,7 @@ namespace :deploy do
   task :after_update_code do
     copy_config_files
   end
+  set :mongrel_conf, "#{release_path}/config/mongrel_cluster.yml"
 
 end
 
