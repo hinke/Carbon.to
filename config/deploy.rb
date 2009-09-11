@@ -9,29 +9,25 @@ set :branch, "master"
 set :scm, :git
 
 set :deploy_to, "/var/www/vhosts/#{application}/rails/application"
+set :mongrel_conf, "#{release_path}/config/mongrel_cluster.yml"
 
 server "carbon.to", :app, :web, :db, :primary => true
 
 namespace :deploy do
   desc "Restart Application"
   task :restart do
+    run "/etc/init.d/mongrel_cluster restart"
   end
-
-  [:start, :stop].each do |t|
-    desc "#{t} task is a no-op with mod_rails"
-    task t, :roles => :app do ; end
-  end
-
+    
   task :after_update_code do
     copy_config_files
   end
-  set :mongrel_conf, "#{release_path}/config/mongrel_cluster.yml"
 
 end
 
 desc "Copy shared config files to new release"
 task :copy_config_files, :roles => :app do
-  %w(database.yml).each do |conf|
+  %w(database.yml environment.rb mongrel_cluster.yml).each do |conf|
     run "cp #{shared_path}/system/config/#{conf} #{release_path}/config/#{conf}"
   end
 end
