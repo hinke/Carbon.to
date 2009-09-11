@@ -14,14 +14,14 @@ set :mongrel_conf, "#{release_path}/config/mongrel_cluster.yml"
 server "carbon.to", :app, :web, :db, :primary => true
 
 namespace :deploy do
-  desc "Restart Application"
-  task :restart do
-    run "/etc/init.d/mongrel_cluster restart"
-  end
-    
   task :after_update_code do
     copy_config_files
   end
+
+  desc "Restart Application"
+  task :restart do
+    #run "cd #{deploy_to}/current && mongrel_rails cluster::restart"
+  end    
 
 end
 
