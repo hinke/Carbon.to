@@ -70,7 +70,7 @@ $(document).ready(function() {
     var number = parseFloat($("#left .number").html());
     number = number + 1.0;
     $("#left .number").html(number);
-    converter.paint_right();
+    converter.paint_right(true);
   });
   
   $("ul.add-subtract li.subtract").bind("click", function(){
@@ -79,10 +79,15 @@ $(document).ready(function() {
     if(number != 0){
       number = number - 1.0;
       $("#left .number").html(number);
-      converter.paint_right();
+      converter.paint_right(true);
     }
   });
   
+  $(".conversions ul li").bind("click", function(){
+    $(this).parent().parent().siblings(".inner-converter").attr("id", $(this).attr("id"));
+    converter.paint_left(true);
+  });
+
 });
 
 
@@ -176,18 +181,20 @@ Carbon.Converter.prototype = {
   },
   
   right_co2:function(){
-    return Math.ceil(this.right_amount()*this.right_data().carbon)
+    return Math.ceil(this.right_amount()*this.right_data().carbon);
   },
     
   paint_left: function(recalculate){
     container = this.left();
     number = container.find('.number');
+    unit = container.find('.unit');
     if(recalculate){
       amount = this.calculate_amount(this.left_data().slug,this.right_co2());
       number.html(amount);
     }
     
     number.css('font-size',this.font_size(number.html().length))    
+    unit.html(this.conversions[container.attr("id")].name);
   },
 
   paint_right: function(recalculate){

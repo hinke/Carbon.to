@@ -18,11 +18,10 @@
     <div class="conversions">
       <ul>
         <% @all.each_with_index do |c, indx| %>
-          <li style="<%= c.style(indx) %>"><%= c.name %></li>
+          <li id="<%= c.slug %>" style="<%= c.style(indx) %>"><%= c.name %></li>
         <% end %>
       </ul>
     </div>
-    <div class="toggle-conversions"></div>
   </div>
   
   
@@ -36,14 +35,15 @@
         <%= @random.unit %> <%= @random.name %>   
       </div>
     </div>
+    
     <div class="conversions">
       <ul>
        <% @all.each_with_index do |c, indx| %>
-         <li style="<%= c.style(indx) %>"><%= c.name %></li>
+         <li id="<%= c.slug %>" style="<%= c.style(indx) %>"><%= c.name %></li>
        <% end %>
       </ul>
     </div>
-    <div class="toggle-conversions"></div>
+    
   </div>
   
 </div>
