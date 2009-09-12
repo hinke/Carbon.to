@@ -5,6 +5,7 @@ $(document).ready(function() {
   //Initialize event-bindings
   
   converter = new Carbon.Converter(conversions, index);
+  converter.paint_left(true);
   
   //Expand the conversion drawer
   $(".toggle-conversions").bind("click", function(){
@@ -20,6 +21,7 @@ $(document).ready(function() {
       $(this).addClass("opened");
     }
   });
+
   
   $("#left div.inner-converter").bind("click", function(){
     $("#left div.inner-converter").addClass("type");
@@ -172,7 +174,7 @@ Carbon.Converter.prototype = {
   },
 
   calculate_amount: function(slug, co2){
-    return Math.ceil((co2/this.conversions[slug].carbon)).toString();
+    return Math.round((co2/this.conversions[slug].carbon)).toString();
   },
   
   left:function(){
@@ -188,7 +190,7 @@ Carbon.Converter.prototype = {
   },
   
   left_co2:function(){
-    return Math.ceil(this.left_amount()*this.left_data().carbon)
+    return Math.round(this.left_amount()*this.left_data().carbon)
   },
 
 
@@ -205,7 +207,7 @@ Carbon.Converter.prototype = {
   },
   
   right_co2:function(){
-    return Math.ceil(this.right_amount()*this.right_data().carbon);
+    return Math.round(this.right_amount()*this.right_data().carbon);
   },
     
   paint_left: function(recalculate){
