@@ -2,13 +2,14 @@
   <h1>CARBON.TO</h1>
   
   <div id="left" class="converter">
+    <div class="fade"></div>
     
     <ul class="add-subtract">
-      <li class="add">+</li>
       <li class="subtract">-</li>
+      <li class="add">+</li>
     </ul>
     
-    <div id="<%= @co2.slug %>" class="inner-converter">
+    <div id="<%= @co2.slug %>" class="inner-converter type">
       <div class="number"><%= @co2.amount %></div>  
       <div class="unit" style="color: #1D5FB6;text-shadow: 0 0 3px #1D5FB6;">
         <%= @co2.unit %> <%= @co2.name %>
@@ -16,6 +17,7 @@
     </div>
     
     <div class="conversions">
+      <h2>Choose your unit</h2>
       <ul>
         <% @all.each_with_index do |c, indx| %>
           <li id="<%= c.slug %>" style="<%= c.style(indx) %>"><%= c.name %></li>
@@ -25,10 +27,17 @@
   </div>
   
   
-  <div id="equal">=</div>
+  <div id="equal">≈</div>
   
   <div id="right" class="converter">
-
+    <div class="fade"></div>
+    
+    <ul class="add-subtract">
+      <li class="subtract">-</li>
+      <li class="add">+</li>
+    </ul>
+    
+    
     <div id="<%= @random.slug %>" class="inner-converter">
       <div class="number"><%= @random.amount %></div>  
       <div class="unit" style="color: #B52A1D;text-shadow: 0 0 3px #B52A1D;">
@@ -37,6 +46,7 @@
     </div>
     
     <div class="conversions">
+      <h2>Choose your unit</h2>
       <ul>
        <% @all.each_with_index do |c, indx| %>
          <li id="<%= c.slug %>" style="<%= c.style(indx) %>"><%= c.name %></li>

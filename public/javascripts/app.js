@@ -70,22 +70,31 @@ $(document).ready(function() {
   });
   
   
-  // Add and subtract obs: temporary...
+  // Add and subtract
   $("ul.add-subtract li.add").bind("click", function(){
-
-    var number = parseFloat($("#left .number").html());
+    var conv = $(this).parent().parent()
+    var number = parseFloat(conv.find(".number").html());
     number = number + 1.0;
-    $("#left .number").html(number);
-    converter.paint_right(true);
+    conv.find(".number").html(number);
+    
+    if(conv.attr("id") == "left"){
+      converter.paint_right(true);
+    }else{
+      converter.paint_left(true);
+    }
   });
   
   $("ul.add-subtract li.subtract").bind("click", function(){
-    var number = parseFloat($("#left .number").html());
-    
+    var conv = $(this).parent().parent()
+    var number = parseFloat(conv.find(".number").html());  
     if(number != 0){
       number = number - 1.0;
-      $("#left .number").html(number);
-      converter.paint_right(true);
+      conv.find(".number").html(number);
+      if(conv.attr("id") == "left"){
+        converter.paint_right(true);
+      }else{
+        converter.paint_left(true);
+      }
     }
   });
   
@@ -196,7 +205,7 @@ Carbon.Converter.prototype = {
     unit = container.find('.unit');
     if(recalculate){
       amount = this.calculate_amount(this.left_data().slug,this.right_co2());
-      number.html(amount);
+      this.spin_number(number, amount);
     }
     
     number.css('font-size',this.font_size(number.html().length))    
@@ -306,11 +315,21 @@ Carbon.Converter.prototype = {
       default:  
         return "110px"
         break;
-      
-    }
+      }
+  }, 
+  spin_number: function(number, amount){
+    
+    //var nums = number.html();
+    //var length = nums.length;
+    //var foo = 0;
+    //for(i = 0; i < 40; i++){
+    //  foo += 15;
+    //  setTimeout(function(){
+    //    number.html(Math.floor(100+(Math.random()*800)));
+    //  }, foo);
+    //}
+    number.html(amount);
   }
-  
-  
 }
 
 function rand(n){
