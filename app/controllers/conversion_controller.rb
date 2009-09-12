@@ -2,13 +2,12 @@ class ConversionController < ApplicationController
   #caches_page :data
     
   def index
-    all = Conversion.all
-    
-    all.map {|c| c.amount = co2}
+    @all = Conversion.all
+    @all.map {|c| c.amount = co2}
     
     respond_to do |format|
-      format.xml {render :xml => all.to_xml(:skip_types => true)  }
-      format.json {render :json => all.to_json  }
+      format.xml {render :xml => @all.to_xml(:skip_types => true)  }
+      format.json {render :json => @all.to_json  }
     end
     
   end

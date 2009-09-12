@@ -37,7 +37,7 @@ h1{
 }
 
 #left ul.add-subtract{
-  top:20px;
+  top:8px;
   left: 367px;
 }
 #right ul.add-subtract{
@@ -107,7 +107,28 @@ h1{
   background: #8A8A8A url(/images/arrow-up.png) no-repeat 195px 6px;
 }
 .converter .toggle-conversions.opened:hover{
-  background: #8A8A8A url(/images/arrow-up.png) no-repeat 195px 6px;
+  background: #8A8A8A url(/images/arrow-up.png) no-repeat 195px 6px;  
+}
+
+.converter .next-conversion{
+  position: absolute;
+  top: 215px;
+  left: 372px;
+  height: 40px;
+  width: 20px;
+  background: #ACACAC;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+}
+.converter .previous-conversion{
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 40px;
+  width: 20px;
+  background: #ACACAC;
   
 }
 

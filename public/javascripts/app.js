@@ -37,6 +37,10 @@ $(document).ready(function() {
     }
   });
   
+  $("#left .number").bind("change", function(){
+    console.log("hellozzzz");
+  });
+  
 });
 
 
