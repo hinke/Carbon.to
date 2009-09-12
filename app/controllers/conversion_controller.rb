@@ -1,5 +1,6 @@
 class ConversionController < ApplicationController
-  
+  #caches_page :data
+    
   def index
     all = Conversion.all
     
@@ -11,6 +12,19 @@ class ConversionController < ApplicationController
     end
     
   end
+
+  def data
+    ActiveRecord::Base.include_root_in_json = false
+    
+    @all = Conversion.all
+    
+    @all.map {|c| c.amount = co2}
+      
+    respond_to do |format|
+      format.js {render :layout => false }
+    end
+  end
+
   
   def show
     

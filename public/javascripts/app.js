@@ -4,6 +4,9 @@ $(document).ready(function() {
   
   //Initialize event-bindings
   
+  converter = new Carbon.Converter(conversions, index);
+  console.log(converter.random())
+  
   //Expand the conversion drawer
   $(".toggle-conversions").bind("click", function(){
     var conversions = $(this).siblings(".conversions");
@@ -58,3 +61,43 @@ jQuery.easing = jQuery.extend({
 		return -2*c*ts*ts/(d*d) + 2*c*ts/d + c/2 + b;		
   }
 },jQuery.easing);
+
+var Carbon = Carbon || {};
+$.extend(Carbon, {
+  Class: function() {
+    return function() {
+      this.initialize.apply(this, arguments);
+    };
+  }
+});
+
+Carbon.Converter = Carbon.Class();
+Carbon.Converter.prototype = {
+  initialize: function(conversions, index) {
+    this.conversions = conversions;
+    this.index = index;
+    this.current = 0;
+  },
+  find: function(id){
+    return this.conversions[id];
+  },
+  random: function(){
+    this.current = rand(this.index.length)
+    return this.conversions[this.index[this.current]];
+  },
+  next: function(){
+    this.current ++;
+    if (this.current >= this.index.length) this.current = 0;
+    return this.conversions[this.index[this.current]];
+  },
+  previous: function(){
+    this.current --;
+    if (this.current < 0) this.current = this.index.length-1;
+    return this.conversions[this.index[this.current]];
+  },
+  
+}
+
+function rand(n){
+  return ( Math.floor ( Math.random() * n ) );
+}

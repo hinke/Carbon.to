@@ -1,0 +1,13 @@
+conversions = {
+<%  @all.each do |c| -%>
+  <%= "\"#{c.slug}\" : #{c.to_json}" -%>
+  <%= if not c == @all.last then "," end -%>
+<% end %>   
+};
+
+index = [
+<%  @all.each do |c| -%>
+  <%= "\"#{c.slug}\"" -%>
+  <%= if not c == @all.last then "," end -%>
+<% end %>   
+];
