@@ -15,11 +15,78 @@ h1{
   width: 980px;
 }
 
+#logo{
+  position:relative;
+  height: 120px;
+  top: 20px;
+  left: 0px;
+}
+
+#menu{
+  position:absolute;
+  top: 26px;
+  right: 10px;
+}
+
+#menu p{
+	font-size: 18px;
+}
+#menu p a {
+	font-weight: bold;
+	color: #999;
+	text-decoration: none;
+}
+
+#menu p a:hover{
+	color: #333;
+}
+#info p{
+	font-size: 16px;
+}
+#info{
+  position: relative;
+  float:left;
+  left: 0px;
+  margin: 0 auto;
+  width: 500px;
+}
+#right_column{
+  float:right;
+  right: 0px;
+ top: 0;
+  margin: 0 auto;
+  width: 240px;
+}
+#info p a {
+	font-weight: bold;
+	color: #999;
+	text-decoration: none;
+}
+
+#info p a:hover{
+	color: #333;
+}
+#right_column p{
+	font-size: 14px;
+	text-align: right;
+}
+#right_column p a {
+	font-weight: bold;
+	color: #999;
+	text-decoration: none;
+}
+
+#right_column p a:hover{
+	color: #333;
+}
+
+
+
 #equal{
   position:absolute;
   font-size: 150px;
   font-weight: bold;
-  top: 62px;
+  top: 142px;
   left: 444px;
 }
 
@@ -137,5 +204,5 @@ h1{
 }
 
 .type {
-  background: #FFFFDB !important;
+  background: #ECECEC !important;
 }

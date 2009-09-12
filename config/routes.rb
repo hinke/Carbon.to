@@ -35,6 +35,7 @@ ActionController::Routing::Routes.draw do |map|
    
   # See how all your routes lay out with "rake routes"
   map.connect '/about', :controller => 'welcome', :action => 'about'
+  map.connect '/api', :controller => 'welcome', :action => 'api'
   map.conversions '/all.:format', :controller => 'conversion', :action => 'index'
   map.conversions '/data.:format', :controller => 'conversion', :action => 'data'
   map.conversions '/:id.:format', :controller => 'conversion', :action => 'show'

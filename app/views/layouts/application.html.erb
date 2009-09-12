@@ -14,6 +14,25 @@
 	
 </head>
 <body>
+  <div id="container">
+  <div id="logo">
+	<% image = "/images/logo"+rand(4).to_s+".png" %>
+     <a href="/"><%= image_tag image, :alt => 'home', :border=> '0' %></a>
+  </div>
+  <div id="menu">
+	<p><a href="/about">About</a> | <a href="/api">API</a></p>
+  </div>
   <%= yield %>
+  </div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1465382-18");
+pageTracker._trackPageview();
+} catch(err) {}</script>
 </body>
 </html>
