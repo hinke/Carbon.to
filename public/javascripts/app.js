@@ -200,6 +200,8 @@ Carbon.Converter.prototype = {
     }
     
     number.css('font-size',this.font_size(number.html().length))    
+    number.css('padding-top',this.font_padding(number.html().length))    
+    
     unit.html(this.conversions[container.attr("id")].name);
   },
 
@@ -211,6 +213,7 @@ Carbon.Converter.prototype = {
       number.html(amount);
     }
     number.css('font-size',this.font_size(number.html().length))    
+    number.css('padding-top',this.font_padding(number.html().length))    
   },
   
   font_size:function(digits){
@@ -258,7 +261,55 @@ Carbon.Converter.prototype = {
         break;
       
     }
+  },
+  
+  font_padding:function(digits){
+    switch(digits){
+      case 1:
+      case 2:
+      case 3:
+        return "0px"
+        break;
+      case 4:
+        return "20px"
+        break;
+      case 5:
+        return "40px"
+        break;
+      case 6:
+        return "60px"
+        break;
+      case 7:
+        return "80px"
+        break;
+      case 8:
+        return "90px"
+        break;
+      case 9:
+      case 10:
+      case 11:
+        return "102px"
+        break;
+      case 12:
+      case 13:
+      case 14:
+        return "102px"
+        break;
+      case 15:
+      case 16:
+      case 17:
+      case 18:
+      case 19:
+      case 20:
+        return "105px"
+        break;
+      default:  
+        return "110px"
+        break;
+      
+    }
   }
+  
   
 }
 
