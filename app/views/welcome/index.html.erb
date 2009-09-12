@@ -15,7 +15,7 @@
     <div class="conversions">
       <ul>
         <% @all.each_with_index do |c, indx| %>
-          <li id="<%= c.slug %>" style="<%= c.style(indx) %>"><%= c.name %></li>
+          <li class="<%= c.slug %>" style="<%= c.style(indx) %>"><%= c.name %></li>
         <% end %>
       </ul>
     </div>
@@ -36,7 +36,7 @@
     <div class="conversions">
       <ul>
        <% @all.each_with_index do |c, indx| %>
-         <li id="<%= c.slug %>" style="<%= c.style(indx) %>"><%= c.name %></li>
+         <li class="<%= c.slug %>" style="<%= c.style(indx) %>"><%= c.name %></li>
        <% end %>
       </ul>
     </div>
