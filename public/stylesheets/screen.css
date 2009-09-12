@@ -139,3 +139,7 @@ h1{
 #right{
   float:right;
 }
+
+.type {
+  border: 1px solid red;
+}

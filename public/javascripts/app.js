@@ -21,6 +21,49 @@ $(document).ready(function() {
     }
   });
   
+  $("#left").bind("click", function(){
+    $("#left").addClass("type");
+    $("#right").removeClass("type");
+  });
+
+  $("#right").bind("click", function(){
+    $("#right").addClass("type");
+    $("#left").removeClass("type");
+  });
+  
+  $(window).keydown(function(ev) {
+    
+    op = $("div.type");
+    
+    if(op){
+      field = op.find("div.number");
+      if (ev.keyCode > 47 && ev.keyCode < 58){
+        num = String.fromCharCode(ev.keyCode);
+        field.html(field.html() + num.toString());
+        if (op.attr("id") == "left"){
+          converter.paint_right(true);
+          converter.paint_left(false);
+        }else if(op.attr("id") == "right"){          
+          converter.paint_left(true);
+          converter.paint_right(false);
+        }
+      } else if (ev.keyCode == 8){
+        if (field.html().length > 1){
+          field.html(field.html().substring(0,field.html().length-1))
+        }
+        if (op.attr("id") == "left"){
+          converter.paint_right(true);
+          converter.paint_left(false);
+        }else if(op.attr("id") == "right"){          
+          converter.paint_left(true);
+          converter.paint_right(false);
+        }
+        return false;
+      }
+    }
+  });
+  
+  
   // Add and subtract obs: temporary...
   $("ul.add-subtract li.add").bind("click", function(){
     var number = parseInt($("#left .number").html());
@@ -35,12 +78,7 @@ $(document).ready(function() {
       number = number - 1;
       $("#left .number").html(number);
       converter.paint_right();
-      
     }
-  });
-  
-  $("#left .number").bind("change", function(){
-    console.log("hellozzzz");
   });
   
 });
@@ -139,24 +177,34 @@ Carbon.Converter.prototype = {
     return Math.ceil(this.right_amount()*this.right_data().carbon)
   },
     
-  paint_left: function(){
+  paint_left: function(recalculate){
     container = this.left();
-    amount = this.calculate_amount(this.left_data().slug,this.right_co2());
     number = container.find('.number');
-    number.html(amount);
-    number.css('font-size',this.font_size(amount.toString().length))    
+    if(recalculate){
+      amount = this.calculate_amount(this.left_data().slug,this.right_co2());
+      number.html(amount);
+    }
+    
+    number.css('font-size',this.font_size(number.html().length))    
   },
 
-  paint_right: function(){
+  paint_right: function(recalculate){
     container = this.right();
-    amount = this.calculate_amount(this.right_data().slug,this.left_co2());
     number = container.find('.number');
-    number.html(amount);
-    number.css('font-size',this.font_size(amount.toString().length))    
+    if(recalculate){
+      amount = this.calculate_amount(this.right_data().slug,this.left_co2());
+      number.html(amount);
+    }
+    number.css('font-size',this.font_size(number.html().length))    
   },
   
   font_size:function(digits){
     switch(digits){
+      case 1:
+      case 2:
+      case 3:
+        return "150px"
+        break;
       case 4:
         return "130px"
         break;
@@ -166,8 +214,32 @@ Carbon.Converter.prototype = {
       case 6:
         return "90px"
         break;
+      case 7:
+        return "70px"
+        break;
+      case 8:
+        return "50px"
+        break;
+      case 9:
+      case 10:
+      case 11:
+        return "40px"
+        break;
+      case 12:
+      case 13:
+      case 14:
+        return "30px"
+        break;
+      case 15:
+      case 16:
+      case 17:
+      case 18:
+      case 19:
+      case 20:
+        return "28px"
+        break;
       default:  
-        return "150px"
+        return "10px"
         break;
       
     }
