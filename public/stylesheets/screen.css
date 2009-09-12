@@ -126,9 +126,24 @@ h1{
   -webkit-border-radius: 8px;
   cursor:pointer;
 }
-.converter ul.add-subtract li:hover{
-  background: #d1d1d1;
+
+.converter ul.add-subtract li.add{
+  background: #ACACAC url(/images/add.png) no-repeat 6px 6px;
 }
+.converter ul.add-subtract li.subtract{
+  background: #ACACAC url(/images/subtract.png) no-repeat 6px 6px;
+  
+}
+
+.converter ul.add-subtract li.add:hover{
+  background: #d1d1d1 url(/images/add.png) no-repeat 6px 6px !important;
+}
+
+.converter ul.add-subtract li.subtract:hover{
+  background: #d1d1d1 url(/images/subtract.png) no-repeat 6px 6px !important;
+
+}
+
 .converter .inner-converter{
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
