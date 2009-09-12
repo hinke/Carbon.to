@@ -78,7 +78,7 @@ Carbon.Converter.prototype = {
     this.index = index;
     this.current = 0;
   },
-  find: function(id){
+  data: function(id){
     return this.conversions[id];
   },
   random: function(){
@@ -95,6 +95,51 @@ Carbon.Converter.prototype = {
     if (this.current < 0) this.current = this.index.length-1;
     return this.conversions[this.index[this.current]];
   },
+
+  calculate_amount: function(slug, co2){
+    return Math.ceil((co2/this.conversions[slug].carbon)).toString();
+  },
+  
+  left:function(){
+    return $('#left div.inner-converter');
+  },
+
+  left_data:function(){
+    return this.data(this.left()[0].id);
+  },
+  
+  left_amount:function(){
+    return parseInt(this.left().find('.number').html());
+  },
+  
+  left_co2:function(){
+    return Math.ceil(this.left_amount()*this.left_data().carbon)
+  },
+
+
+  right:function(){
+    return $('#right div.inner-converter');
+  },
+
+  right_data:function(){
+    return this.data(this.right()[0].id);
+  },
+  
+  right_amount:function(){
+    return parseInt(this.right().find('.number').html());
+  },
+  
+  right_co2:function(){
+    return Math.ceil(this.right_amount()*this.right_data().carbon)
+  },
+    
+  paint_left: function(){
+    this.left().find('.number').html(this.calculate_amount(this.left_data().slug,this.right_co2()));
+  },
+
+  paint_right: function(){
+    this.right().find('.number').html(this.calculate_amount(this.right_data().slug,this.left_co2()));
+  }
   
 }
 
