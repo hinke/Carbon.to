@@ -8,9 +8,6 @@
       <li class="subtract">-</li>
     </ul>
     
-    <div class="next-conversion"></div>
-    <div class="previous-conversion"></div>
-    
     <div id="<%= @co2.slug %>" class="inner-converter">
       <div class="number"><%= @co2.amount %></div>  
       <div class="unit" style="color: #1D5FB6;text-shadow: 0 0 3px #1D5FB6;">
@@ -18,7 +15,13 @@
       </div>
     </div>
     
-    <div class="conversions"></div>
+    <div class="conversions">
+      <ul>
+        <% @all.each_with_index do |c, indx| %>
+          <li style="<%= c.style(indx) %>"><%= c.name %></li>
+        <% end %>
+      </ul>
+    </div>
     <div class="toggle-conversions"></div>
   </div>
   
@@ -33,7 +36,13 @@
         <%= @random.unit %> <%= @random.name %>   
       </div>
     </div>
-    <div class="conversions"></div>
+    <div class="conversions">
+      <ul>
+       <% @all.each_with_index do |c, indx| %>
+         <li style="<%= c.style(indx) %>"><%= c.name %></li>
+       <% end %>
+      </ul>
+    </div>
     <div class="toggle-conversions"></div>
   </div>
   

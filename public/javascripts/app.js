@@ -23,26 +23,24 @@ $(document).ready(function() {
   
   // Add and subtract obs: temporary...
   $("ul.add-subtract li.add").bind("click", function(){
-    var number = parseInt($("#left .number").html());
-    number = number + 1;
+
+    var number = parseFloat($("#left .number").html());
+    number = number + 1.0;
     $("#left .number").html(number);
     converter.paint_right();
   });
   
   $("ul.add-subtract li.subtract").bind("click", function(){
-    var number = parseInt($("#left .number").html());
+    var number = parseFloat($("#left .number").html());
+    
     if(number != 0){
-      number = number - 1;
+      number = number - 1.0;
       $("#left .number").html(number);
       converter.paint_right();
-      
     }
   });
   
-  $("#left .number").bind("change", function(){
-    console.log("hellozzzz");
-  });
-  
+
 });
 
 
