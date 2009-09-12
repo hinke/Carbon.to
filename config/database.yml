@@ -1,0 +1,15 @@
+production:
+  adapter: mysql
+  encoding: utf8
+  database: carbonto
+  username: admin_carbon
+  password: ecomo09
+  host: 70.32.99.240
+
+development:
+    adapter: mysql
+    encoding: utf8
+    database: carbonto
+    username: admin_carbon
+    password: ecomo09
+    host: 70.32.99.240
