@@ -8,12 +8,16 @@
       <li class="subtract">-</li>
     </ul>
     
-    <div id="apples" class="inner-converter">
-      <div class="number">42</div>  
-      <div class="unit" style="color: #1AA336;text-shadow: 0 0 3px #18862E;">
-        kg CO<span>2</span>
+    <div class="next-conversion"></div>
+    <div class="previous-conversion"></div>
+    
+    <div id="<%= @co2.slug %>" class="inner-converter">
+      <div class="number"><%= @co2.amount %></div>  
+      <div class="unit" style="color: #1D5FB6;text-shadow: 0 0 3px #1D5FB6;">
+        <%= @co2.unit %> <%= @co2.name %>
       </div>
     </div>
+    
     <div class="conversions"></div>
     <div class="toggle-conversions"></div>
   </div>
@@ -22,10 +26,11 @@
   <div id="equal">=</div>
   
   <div id="right" class="converter">
-    <div id="eggs" class="inner-converter">
-      <div class="number">103</div>  
-      <div class="unit" style="color: #D8673B;text-shadow: 0 0 3px #D8673B;">
-        tomatoes
+
+    <div id="<%= @random.slug %>" class="inner-converter">
+      <div class="number"><%= @random.amount %></div>  
+      <div class="unit" style="color: #B52A1D;text-shadow: 0 0 3px #B52A1D;">
+        <%= @random.unit %> <%= @random.name %>   
       </div>
     </div>
     <div class="conversions"></div>

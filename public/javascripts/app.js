@@ -5,7 +5,6 @@ $(document).ready(function() {
   //Initialize event-bindings
   
   converter = new Carbon.Converter(conversions, index);
-  console.log(converter.random())
   
   //Expand the conversion drawer
   $(".toggle-conversions").bind("click", function(){
@@ -27,6 +26,7 @@ $(document).ready(function() {
     var number = parseInt($("#left .number").html());
     number = number + 1;
     $("#left .number").html(number);
+    converter.paint_right();
   });
   
   $("ul.add-subtract li.subtract").bind("click", function(){
@@ -34,7 +34,13 @@ $(document).ready(function() {
     if(number != 0){
       number = number - 1;
       $("#left .number").html(number);
+      converter.paint_right();
+      
     }
+  });
+  
+  $("#left .number").bind("change", function(){
+    console.log("hellozzzz");
   });
   
 });
@@ -134,11 +140,37 @@ Carbon.Converter.prototype = {
   },
     
   paint_left: function(){
-    this.left().find('.number').html(this.calculate_amount(this.left_data().slug,this.right_co2()));
+    container = this.left();
+    amount = this.calculate_amount(this.left_data().slug,this.right_co2());
+    number = container.find('.number');
+    number.html(amount);
+    number.css('font-size',this.font_size(amount.toString().length))    
   },
 
   paint_right: function(){
-    this.right().find('.number').html(this.calculate_amount(this.right_data().slug,this.left_co2()));
+    container = this.right();
+    amount = this.calculate_amount(this.right_data().slug,this.left_co2());
+    number = container.find('.number');
+    number.html(amount);
+    number.css('font-size',this.font_size(amount.toString().length))    
+  },
+  
+  font_size:function(digits){
+    switch(digits){
+      case 4:
+        return "130px"
+        break;
+      case 5:
+        return "110px"
+        break;
+      case 6:
+        return "90px"
+        break;
+      default:  
+        return "150px"
+        break;
+      
+    }
   }
   
 }
