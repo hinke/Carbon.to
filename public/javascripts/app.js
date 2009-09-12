@@ -103,11 +103,11 @@ $(document).ready(function() {
       $(this).parent().parent().siblings(".inner-converter").attr("id", $(this).attr("class"));
       $(this).parent().parent().parent().find('div.unit').css("color", $(this).css("background-color")).css('text-shadow',"0 0 3px "+$(this).css("background-color"));
       if ($(this).parent().parent().parent().attr('id') == "left"){
-        converter.paint_left(false);
-        converter.paint_right(true);
-      }else{
-        converter.paint_right(false);      
+        converter.paint_right(false);
         converter.paint_left(true);
+      }else{
+        converter.paint_left(false);
+        converter.paint_right(true);      
       }
     }
   });
