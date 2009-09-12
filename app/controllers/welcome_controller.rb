@@ -6,6 +6,8 @@ class WelcomeController < ApplicationController
     @all.map {|c| c.amount = co2}
     
     @co2 = Conversion.find(:first, :conditions => {:slug => "co2"})
+    @co2.amount = co2
+    
     @random = @all.rand
   end
 
@@ -16,6 +18,7 @@ class WelcomeController < ApplicationController
   end
   
   private
+  
   def co2
     if !params[:co2].nil?
       co2 = params[:co2].to_i
