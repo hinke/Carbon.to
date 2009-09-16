@@ -160,7 +160,7 @@ Carbon.Converter.prototype = {
   },
   
   right_amount:function(){
-    amount = this.right().find('.number').html();
+    var amount = this.right().find('.number').html();
     amount = amount.replace('&gt;','');
     return parseInt(amount);
   },
@@ -170,44 +170,52 @@ Carbon.Converter.prototype = {
   },
     
   paint_left: function(recalculate){
-    container = this.left();
-    number = container.find('.number');
-    unit = container.find('.unit');
+    var container = this.left();
+    var number = container.find('.number');
+    var unit = container.find('.unit');
+    var html_amount = '';
     
     if(recalculate){
-      amount = Math.round(this.calculate_amount(this.left_data().slug,this.right_co2()));
+      var amount = Math.round(this.calculate_amount(this.left_data().slug,this.right_co2()));
       var do_spin = (amount != this.left_amount());
       if(amount == 0 && this.right_amount() != 0){
         html_amount = "&gt;1";
       }else{
         html_amount = amount.toString();
       }
-      if (do_spin) this.spin_number(number, html_amount, amount.length);
-      number.css('font-size',this.font_size(amount.length));
-      number.css('padding-top',this.font_padding(amount.length));
-    }
-    
+      if (do_spin){
+        this.spin_number(number, html_amount, amount.toString().length);
+      }else{
+        number.html(html_amount);
+      }
+      number.css('font-size',this.font_size(amount.toString().length));
+      number.css('padding-top',this.font_padding(amount.toString().length));
+    } 
     
     unit.html(this.conversions[container.attr("id")].unit);
   },
 
   paint_right: function(recalculate){
-    container = this.right();
-    number = container.find('.number');
-    unit = container.find('.unit');
-    html_amount = '';
+    var container = this.right();
+    var number = container.find('.number');
+    var unit = container.find('.unit');
+    var html_amount = '';
     
     if(recalculate){
-      amount = Math.round(this.calculate_amount(this.right_data().slug,this.left_co2()));
+      var amount = Math.round(this.calculate_amount(this.right_data().slug,this.left_co2()));
       var do_spin = (amount != this.right_amount());
       if(amount == 0 && this.left_amount() != 0){
         html_amount = "&gt;1";
       }else{
         html_amount = amount.toString();
       }
-      if(do_spin) this.spin_number(number, html_amount, amount.length);
-      number.css('font-size',this.font_size(amount.length));
-      number.css('padding-top',this.font_padding(amount.length));
+      if (do_spin){
+        this.spin_number(number, html_amount, amount.toString().length);
+      }else{
+        number.html(html_amount);
+      }
+      number.css('font-size',this.font_size(amount.toString().length));
+      number.css('padding-top',this.font_padding(amount.toString().length));
     }
 
     unit.html(this.conversions[container.attr("id")].unit);
