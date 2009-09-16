@@ -1,3 +1,4 @@
+var flicker_store = 0;
 //Client app for Carbon.to
 
 $(document).ready(function() {	
@@ -141,7 +142,6 @@ Carbon.Converter.prototype = {
   left_amount:function(){
     amount = this.left().find('.number').html();
     amount = amount.replace('&gt;','');
-    console.log(amount);
     return parseInt(amount);
     
   },
@@ -173,16 +173,18 @@ Carbon.Converter.prototype = {
     container = this.left();
     number = container.find('.number');
     unit = container.find('.unit');
+    
     if(recalculate){
-      amount = Math.round(this.calculate_amount(this.left_data().slug,this.right_co2())).toString();
-      if(amount === "0" && this.right_amount() != 0){
+      amount = Math.round(this.calculate_amount(this.left_data().slug,this.right_co2()));
+      var do_spin = (amount != this.left_amount());
+      if(amount == 0 && this.right_amount() != 0){
         html_amount = "&gt;1";
       }else{
-        html_amount = amount;
+        html_amount = amount.toString();
       }
-      number.html(html_amount);
-      number.css('font-size',this.font_size(amount.length))    
-      number.css('padding-top',this.font_padding(amount.length))    
+      if (do_spin) this.spin_number(number, html_amount, amount.length);
+      number.css('font-size',this.font_size(amount.length));
+      number.css('padding-top',this.font_padding(amount.length));
     }
     
     
@@ -196,15 +198,16 @@ Carbon.Converter.prototype = {
     html_amount = '';
     
     if(recalculate){
-      amount = Math.round(this.calculate_amount(this.right_data().slug,this.left_co2())).toString();
-      if(amount === "0" && this.left_amount() != 0){
+      amount = Math.round(this.calculate_amount(this.right_data().slug,this.left_co2()));
+      var do_spin = (amount != this.right_amount());
+      if(amount == 0 && this.left_amount() != 0){
         html_amount = "&gt;1";
       }else{
-        html_amount = amount;
+        html_amount = amount.toString();
       }
-      number.html(html_amount);
-      number.css('font-size',this.font_size(amount.length))    
-      number.css('padding-top',this.font_padding(amount.length))    
+      if(do_spin) this.spin_number(number, html_amount, amount.length);
+      number.css('font-size',this.font_size(amount.length));
+      number.css('padding-top',this.font_padding(amount.length));
     }
 
     unit.html(this.conversions[container.attr("id")].unit);
@@ -301,6 +304,19 @@ Carbon.Converter.prototype = {
         return "110px"
         break;
       }
+  },
+  
+  spin_number: function(number, html_amount, amount_length){
+    var foo = 0;
+    for(i = 0; i < 20; i++){
+      foo += 20;
+      setTimeout(function(){
+        number.html(rand(Math.pow(10, amount_length)));
+      }, foo);
+    }
+    setTimeout(function(){
+      number.html(html_amount);
+    }, 400);  
   }
 }
 
