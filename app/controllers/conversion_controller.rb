@@ -1,5 +1,5 @@
 class ConversionController < ApplicationController
-  #caches_page :data
+  caches_page :data
     
   def index
     @all = Conversion.all
@@ -41,9 +41,8 @@ class ConversionController < ApplicationController
   private
   
   def co2
-    if !params[:co2].nil?
-      co2 = params[:co2].to_i
-      if co2 < 1 then co2 = 1 end
+    if !params[:co2].nil? and !params[:co2].blank?
+      co2 = params[:co2].to_f
     else
       co2 = 1
     end
