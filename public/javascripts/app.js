@@ -20,83 +20,36 @@ $(document).ready(function() {
       conversions.addClass("opened");
       $(this).addClass("opened");
     }
-  });
-
-  
-  $("#left div.inner-converter").bind("click", function(){
-    $("#left div.inner-converter").addClass("type");
-    $("#right div.inner-converter").removeClass("type");
-  });
-
-  $("#right div.inner-converter").bind("click", function(){
-    $("#right div.inner-converter").addClass("type");
-    $("#left div.inner-converter").removeClass("type");
-  });
-  
-  $(window).keydown(function(ev) {
-    
-    op = $("div.type");
-    
-    if(op){
-      field = op.find("div.number");
-      if (ev.keyCode > 47 && ev.keyCode < 58){
-        num = String.fromCharCode(ev.keyCode);
-        if(field.html() === "0"){
-          field.html(num.toString());
-        }else{
-          field.html(field.html() + num.toString());          
-        }
-        if (op.parent().attr("id") == "left"){
-          converter.paint_right(true);
-          converter.paint_left(false);
-        }else if(op.parent().attr("id") == "right"){          
-          converter.paint_left(true);
-          converter.paint_right(false);
-        }
-      } else if (ev.keyCode == 8){
-        if (field.html().length > 1){
-          field.html(field.html().substring(0,field.html().length-1))
-        }else{
-          field.html("0");
-        }
-        if (op.parent().attr("id") == "left"){
-          converter.paint_right(true);
-          converter.paint_left(false);
-        }else if(op.parent().attr("id") == "right"){          
-          converter.paint_left(true);
-          converter.paint_right(false);
-        }
-        return false;
-      }
-    }
-  });
-  
+  })
   
   // Add and subtract
   $("ul.add-subtract li.add").bind("click", function(){
     var conv = $(this).parent().parent()
-    var number = parseFloat(conv.find(".number").html());
-    number = number + 1.0;
-    conv.find(".number").html(number);
-    
     if(conv.attr("id") == "left"){
+      var amount = converter.left_amount();
+      amount = amount + 1;
+      conv.find(".number").html(amount);
       converter.paint_right(true);
     }else{
+      var amount = converter.right_amount();
+      amount = amount + 1;
+      conv.find(".number").html(amount);
       converter.paint_left(true);
     }
   });
   
   $("ul.add-subtract li.subtract").bind("click", function(){
     var conv = $(this).parent().parent()
-    var number = parseFloat(conv.find(".number").html());  
-    if(number != 0){
-      number = number - 1.0;
-      conv.find(".number").html(number);
-      if(conv.attr("id") == "left"){
-        converter.paint_right(true);
-      }else{
-        converter.paint_left(true);
-      }
+    if(conv.attr("id") == "left"){
+      var amount = converter.left_amount();
+      if(amount != 0) amount = amount - 1;
+      conv.find(".number").html(amount);
+      converter.paint_right(true);
+    }else{
+      var amount = converter.right_amount();
+      if(amount != 0) amount = amount - 1;
+      conv.find(".number").html(amount);
+      converter.paint_left(true);
     }
   });
   
@@ -174,7 +127,7 @@ Carbon.Converter.prototype = {
   },
 
   calculate_amount: function(slug, co2){
-    return Math.round((co2/this.conversions[slug].carbon)).toString();
+    return co2/this.conversions[slug].carbon;
   },
   
   left:function(){
@@ -186,11 +139,15 @@ Carbon.Converter.prototype = {
   },
   
   left_amount:function(){
-    return parseInt(this.left().find('.number').html());
+    amount = this.left().find('.number').html();
+    amount = amount.replace('&gt;','');
+    console.log(amount);
+    return parseInt(amount);
+    
   },
   
   left_co2:function(){
-    return Math.round(this.left_amount()*this.left_data().carbon)
+    return this.left_amount()*this.left_data().carbon
   },
 
 
@@ -203,11 +160,13 @@ Carbon.Converter.prototype = {
   },
   
   right_amount:function(){
-    return parseInt(this.right().find('.number').html());
+    amount = this.right().find('.number').html();
+    amount = amount.replace('&gt;','');
+    return parseInt(amount);
   },
   
   right_co2:function(){
-    return Math.round(this.right_amount()*this.right_data().carbon);
+    return this.right_amount()*this.right_data().carbon
   },
     
   paint_left: function(recalculate){
@@ -215,12 +174,17 @@ Carbon.Converter.prototype = {
     number = container.find('.number');
     unit = container.find('.unit');
     if(recalculate){
-      amount = this.calculate_amount(this.left_data().slug,this.right_co2());
-      number.html(amount);
+      amount = Math.round(this.calculate_amount(this.left_data().slug,this.right_co2())).toString();
+      if(amount === "0" && this.right_amount() != 0){
+        html_amount = "&gt;1";
+      }else{
+        html_amount = amount;
+      }
+      number.html(html_amount);
+      number.css('font-size',this.font_size(amount.length))    
+      number.css('padding-top',this.font_padding(amount.length))    
     }
     
-    number.css('font-size',this.font_size(number.html().length))    
-    number.css('padding-top',this.font_padding(number.html().length))    
     
     unit.html(this.conversions[container.attr("id")].unit);
   },
@@ -229,13 +193,19 @@ Carbon.Converter.prototype = {
     container = this.right();
     number = container.find('.number');
     unit = container.find('.unit');
+    html_amount = '';
     
     if(recalculate){
-      amount = this.calculate_amount(this.right_data().slug,this.left_co2());
-      number.html(amount);
+      amount = Math.round(this.calculate_amount(this.right_data().slug,this.left_co2())).toString();
+      if(amount === "0" && this.left_amount() != 0){
+        html_amount = "&gt;1";
+      }else{
+        html_amount = amount;
+      }
+      number.html(html_amount);
+      number.css('font-size',this.font_size(amount.length))    
+      number.css('padding-top',this.font_padding(amount.length))    
     }
-    number.css('font-size',this.font_size(number.html().length))    
-    number.css('padding-top',this.font_padding(number.html().length))    
 
     unit.html(this.conversions[container.attr("id")].unit);
   },
