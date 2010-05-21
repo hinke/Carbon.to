@@ -39,6 +39,7 @@ ActionController::Routing::Routes.draw do |map|
   map.conversions '/all.:format', :controller => 'conversion', :action => 'index'
   map.conversions '/data.:format', :controller => 'conversion', :action => 'data'
   map.conversions '/:id.:format', :controller => 'conversion', :action => 'show'
+  map.connect '/log', :controller => 'log', :action => 'save'
 
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should

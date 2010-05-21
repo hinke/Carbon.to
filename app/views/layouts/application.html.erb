@@ -9,6 +9,15 @@
   <script src="/javascripts/jquery-1.3.2.min.js"></script>
   <script src="/javascripts/app.js"></script>
   <script src="/data.js"></script>
+  <script type="text/javascript" src="/javascripts/log4javascript.js"></script>
+  <script type="text/javascript">
+	var log = log4javascript.getLogger();
+	var ajaxAppender = new log4javascript.AjaxAppender("log.txt");
+	log.addAppender(ajaxAppender);
+	log.info("Hello world!");
+	
+  	</script>
+
 	
 	<title>Carbon.to - Carbon so you can understand it</title>
 	

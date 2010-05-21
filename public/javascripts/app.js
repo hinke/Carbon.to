@@ -8,6 +8,7 @@ $(document).ready(function() {
   converter = new Carbon.Converter(conversions, index);
   converter.paint_left(true);
   
+
   //Expand the conversion drawer
   $(".toggle-conversions").bind("click", function(){
     var conversions = $(this).siblings(".conversions");
@@ -37,6 +38,7 @@ $(document).ready(function() {
       conv.find(".number").html(amount);
       converter.paint_left(true);
     }
+	log.info("Plus one");
   });
   
   $("ul.add-subtract li.subtract").bind("click", function(){
@@ -108,6 +110,7 @@ Carbon.Converter.prototype = {
     this.conversions = conversions;
     this.index = index;
     this.current = 0;
+	
   },
   data: function(id){
     return this.conversions[id];
@@ -141,7 +144,7 @@ Carbon.Converter.prototype = {
   
   left_amount:function(){
     amount = this.left().find('.number').html();
-    amount = amount.replace('&gt;','');
+    amount = amount.replace('&lt;','');
     return parseInt(amount);
     
   },
@@ -161,7 +164,7 @@ Carbon.Converter.prototype = {
   
   right_amount:function(){
     var amount = this.right().find('.number').html();
-    amount = amount.replace('&gt;','');
+    amount = amount.replace('&lt;','');
     return parseInt(amount);
   },
   
@@ -179,7 +182,7 @@ Carbon.Converter.prototype = {
       var amount = Math.round(this.calculate_amount(this.left_data().slug,this.right_co2()));
       var do_spin = (amount != this.left_amount());
       if(amount == 0 && this.right_amount() != 0){
-        html_amount = "&gt;1";
+        html_amount = "&lt;1";
       }else{
         html_amount = amount.toString();
       }
@@ -205,7 +208,7 @@ Carbon.Converter.prototype = {
       var amount = Math.round(this.calculate_amount(this.right_data().slug,this.left_co2()));
       var do_spin = (amount != this.right_amount());
       if(amount == 0 && this.left_amount() != 0){
-        html_amount = "&gt;1";
+        html_amount = "&lt;1";
       }else{
         html_amount = amount.toString();
       }
@@ -330,5 +333,5 @@ Carbon.Converter.prototype = {
 
 
 function rand(n){
-  return ( Math.floor ( Math.random() * n ) );
+  return ( Math.floor ( Math.random() * n )  );
 }

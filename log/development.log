@@ -1,0 +1,2674 @@
+# Logfile created on Tue May 18 11:53:25 +0200 2010  [4;36;1mSQL (100.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-18 11:53:33) [GET]
+  [4;36;1mConversion Load (102.7ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (124.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (101.4ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (107.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (102.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (100.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (100.5ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 1006ms (View: 165, DB: 940) | 200 OK [http://localhost/]
+  [4;36;1mSQL (101.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-18 11:53:34) [GET]
+  [4;36;1mConversion Load (102.2ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (104.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 539ms (View: 303, DB: 409) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (100.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to ico (for 127.0.0.1 at 2010-05-18 11:53:36) [GET]
+  Parameters: {"id"=>"favicon"}
+  [4;36;1mConversion Columns (101.7ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (100.4ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'favicon') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (79.6ms)
+Rendered rescues/_request_and_response (23.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (100.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to ico (for 127.0.0.1 at 2010-05-18 11:53:39) [GET]
+  Parameters: {"id"=>"favicon"}
+  [4;36;1mConversion Columns (102.1ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (102.6ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'favicon') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (141.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (109.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (111.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to ico (for 127.0.0.1 at 2010-05-18 14:58:59) [GET]
+  Parameters: {"id"=>"favicon"}
+  [4;36;1mConversion Columns (111.2ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (105.4ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'favicon') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (73.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (104.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (104.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-18 14:59:00) [GET]
+  [4;36;1mConversion Load (105.2ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (105.6ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (105.0ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (105.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (104.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (105.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (108.2ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 819ms (View: 52, DB: 948) | 200 OK [http://localhost/]
+  [4;36;1mSQL (102.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-18 14:59:02) [GET]
+  [4;36;1mConversion Load (103.1ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (102.9ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 282ms (View: 38, DB: 409) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (109.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:26:22) [GET]
+  [4;36;1mConversion Load (121.9ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (109.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (106.7ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (123.2ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (107.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (107.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.6ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 1267ms (View: 213, DB: 998) | 200 OK [http://localhost/]
+  [4;36;1mSQL (108.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:26:24) [GET]
+  [4;36;1mConversion Load (110.7ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (111.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 632ms (View: 376, DB: 438) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (105.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:26:26) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (107.0ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (106.3ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (94.9ms)
+Rendered rescues/_request_and_response (2.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (105.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:26:29) [GET]
+  [4;36;1mConversion Load (105.9ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.0ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (105.4ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (108.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (105.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (105.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (105.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 814ms (View: 45, DB: 954) | 200 OK [http://localhost/]
+  [4;36;1mSQL (106.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (110.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:26:31) [GET]
+  [4;36;1mConversion Load (107.2ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (107.9ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 282ms (View: 37, DB: 432) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:26:32) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (107.1ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (105.6ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (64.2ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (101.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:26:35) [GET]
+  [4;36;1mConversion Load (102.4ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (101.6ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (100.7ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (101.2ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (100.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (100.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (100.9ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 776ms (View: 43, DB: 910) | 200 OK [http://localhost/]
+  [4;36;1mSQL (102.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:26:37) [GET]
+  [4;36;1mConversion Load (102.9ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (102.0ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 270ms (View: 37, DB: 408) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (113.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:26:38) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (109.7ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (105.9ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (131.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (106.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:26:41) [GET]
+  [4;36;1mConversion Load (106.3ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (106.6ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (105.9ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (106.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (105.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (105.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (105.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 809ms (View: 43, DB: 953) | 200 OK [http://localhost/]
+  [4;36;1mSQL (106.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:26:43) [GET]
+  [4;36;1mConversion Load (108.7ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (110.0ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 284ms (View: 37, DB: 432) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (107.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:26:44) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (107.4ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (106.9ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (63.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (100.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:26:47) [GET]
+  [4;36;1mConversion Load (101.2ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (101.9ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (100.8ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (101.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (100.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (101.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (103.3ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 781ms (View: 45, DB: 911) | 200 OK [http://localhost/]
+  [4;36;1mSQL (108.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:26:49) [GET]
+  [4;36;1mConversion Load (108.4ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.9ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 283ms (View: 37, DB: 433) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (105.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:26:50) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (107.4ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (109.3ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (131.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (106.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:26:56) [GET]
+  [4;36;1mConversion Load (105.9ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (109.4ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (105.9ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (106.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (105.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.8ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 816ms (View: 43, DB: 958) | 200 OK [http://localhost/]
+  [4;36;1mSQL (106.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:26:58) [GET]
+  [4;36;1mConversion Load (111.1ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (107.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 286ms (View: 38, DB: 430) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (101.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:26:59) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (107.5ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (100.7ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (64.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (100.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:27:22) [GET]
+  [4;36;1mConversion Load (101.2ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (101.4ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (101.4ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (101.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (102.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (101.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (100.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 778ms (View: 43, DB: 911) | 200 OK [http://localhost/]
+  [4;36;1mSQL (101.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:27:24) [GET]
+  [4;36;1mConversion Load (102.1ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (102.4ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 265ms (View: 34, DB: 407) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (111.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:27:25) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (109.6ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (105.9ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (63.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (105.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:27:28) [GET]
+  [4;36;1mConversion Load (106.0ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.0ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (105.9ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (106.2ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (105.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (105.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (105.5ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 808ms (View: 42, DB: 952) | 200 OK [http://localhost/]
+  [4;36;1mSQL (106.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:27:29) [GET]
+  [4;36;1mConversion Load (106.9ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (111.5ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 285ms (View: 39, DB: 430) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (100.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:27:30) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (101.4ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (100.6ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (63.4ms)
+Rendered rescues/_request_and_response (66.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (106.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:27:32) [GET]
+  [4;36;1mConversion Load (109.5ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.4ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (107.1ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (107.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (106.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.9ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 820ms (View: 43, DB: 964) | 200 OK [http://localhost/]
+  [4;36;1mSQL (112.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:27:34) [GET]
+  [4;36;1mConversion Load (108.0ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 283ms (View: 38, DB: 436) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (100.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:27:35) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (101.7ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (100.7ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (63.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (106.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:27:37) [GET]
+  [4;36;1mConversion Load (106.8ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (105.9ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (108.1ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (110.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 818ms (View: 42, DB: 963) | 200 OK [http://localhost/]
+  [4;36;1mSQL (107.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:27:39) [GET]
+  [4;36;1mConversion Load (107.6ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 280ms (View: 37, DB: 431) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:27:40) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (109.8ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (108.1ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (130.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (106.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:29:17) [GET]
+  [4;36;1mConversion Load (107.5ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.4ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (106.8ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (107.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (106.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (108.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 819ms (View: 43, DB: 963) | 200 OK [http://localhost/]
+  [4;36;1mSQL (113.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:29:19) [GET]
+  [4;36;1mConversion Load (111.3ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (109.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 289ms (View: 39, DB: 441) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (105.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:29:20) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (106.8ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (105.4ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (63.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (104.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:29:38) [GET]
+  [4;36;1mConversion Load (105.8ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (105.3ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (105.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (105.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (105.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 809ms (View: 43, DB: 951) | 200 OK [http://localhost/]
+  [4;36;1mSQL (107.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:29:40) [GET]
+  [4;36;1mConversion Load (106.9ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (107.6ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 350ms (View: 39, DB: 429) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (105.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:29:41) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (106.9ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (106.9ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (64.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (100.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:29:57) [GET]
+  [4;36;1mConversion Load (101.8ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (101.5ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (100.7ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (101.1ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (100.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (100.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (102.3ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 778ms (View: 43, DB: 909) | 200 OK [http://localhost/]
+  [4;36;1mSQL (107.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:29:59) [GET]
+  [4;36;1mConversion Load (107.9ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (109.5ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 283ms (View: 37, DB: 432) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:30:00) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (107.0ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (106.6ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (64.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (105.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:30:12) [GET]
+  [4;36;1mConversion Load (106.3ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (105.9ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (106.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (105.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (105.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 812ms (View: 43, DB: 955) | 200 OK [http://localhost/]
+  [4;36;1mSQL (108.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:30:13) [GET]
+  [4;36;1mConversion Load (107.3ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.5ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 286ms (View: 39, DB: 431) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (113.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (110.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:30:14) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (107.1ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (109.3ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (66.9ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (106.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to js (for 127.0.0.1 at 2010-05-19 12:30:16) [GET]
+  Parameters: {"id"=>"log4javascript"}
+  [4;36;1mConversion Columns (107.4ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mConversion Load (105.9ms)[0m   [0mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'log4javascript') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.amount=):
+  app/controllers/conversion_controller.rb:32:in `show'
+
+Rendered rescues/_trace (63.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (100.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:31:05) [GET]
+  [4;36;1mConversion Load (101.7ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (101.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (100.9ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (101.3ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (100.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (100.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (101.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 854ms (View: 121, DB: 910) | 200 OK [http://localhost/]
+  [4;36;1mSQL (101.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:31:07) [GET]
+  [4;36;1mConversion Load (102.1ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (102.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 274ms (View: 40, DB: 407) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 12:31:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:31:31) [GET]
+  [4;36;1mConversion Load (107.6ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (106.7ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (107.1ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (106.7ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.5ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 817ms (View: 43, DB: 961) | 200 OK [http://localhost/]
+  [4;36;1mSQL (107.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:31:33) [GET]
+  [4;36;1mConversion Load (108.1ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.9ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 283ms (View: 37, DB: 432) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (105.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 12:31:34) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 12:32:15) [GET]
+  [4;36;1mConversion Load (107.1ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (108.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (106.7ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (107.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (106.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 826ms (View: 52, DB: 963) | 200 OK [http://localhost/]
+  [4;36;1mSQL (107.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 12:32:17) [GET]
+  [4;36;1mConversion Load (107.9ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.4ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 282ms (View: 37, DB: 432) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (131.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 12:32:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (113.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 14:36:56) [GET]
+  [4;36;1mConversion Load (101.7ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (102.0ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (101.1ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (102.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (110.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (105.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (100.8ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 850ms (View: 85, DB: 939) | 200 OK [http://localhost/]
+  [4;36;1mSQL (112.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 14:36:58) [GET]
+  [4;36;1mConversion Load (104.2ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (102.9ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 272ms (View: 37, DB: 421) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (100.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 14:36:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (110.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 14:37:07) [GET]
+  [4;36;1mConversion Load (117.5ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (108.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (106.7ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (107.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (108.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (109.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (118.9ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 846ms (View: 43, DB: 993) | 200 OK [http://localhost/]
+  [4;36;1mSQL (108.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 14:37:09) [GET]
+  [4;36;1mConversion Load (108.4ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.4ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 282ms (View: 37, DB: 432) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 14:37:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (108.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 15:20:41) [GET]
+  [4;36;1mConversion Load (102.3ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.6ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (104.6ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (104.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (101.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (103.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (105.3ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 854ms (View: 53, DB: 941) | 200 OK [http://localhost/]
+  [4;36;1mSQL (105.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (111.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 15:20:42) [GET]
+  [4;36;1mConversion Load (104.1ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (112.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 283ms (View: 37, DB: 433) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (105.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 15:20:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (108.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 15:20:59) [GET]
+  [4;36;1mConversion Load (108.4ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (108.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (107.2ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (108.2ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (110.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (110.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (107.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 830ms (View: 43, DB: 974) | 200 OK [http://localhost/]
+  [4;36;1mSQL (107.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 15:21:01) [GET]
+  [4;36;1mConversion Load (107.9ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.5ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 283ms (View: 37, DB: 432) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (108.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 15:21:02) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (105.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 15:22:37) [GET]
+  [4;36;1mConversion Load (106.5ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (109.6ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (106.1ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (108.0ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (106.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (105.5ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 843ms (View: 69, DB: 959) | 200 OK [http://localhost/]
+  [4;36;1mSQL (108.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 15:22:39) [GET]
+  [4;36;1mConversion Load (109.2ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (112.9ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 289ms (View: 38, DB: 438) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (103.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 15:22:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (109.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (109.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 15:24:42) [GET]
+  [4;36;1mConversion Load (119.0ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (118.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (108.8ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (113.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (108.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (107.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (107.4ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 860ms (View: 52, DB: 1002) | 200 OK [http://localhost/]
+  [4;36;1mSQL (111.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 15:24:44) [GET]
+  [4;36;1mConversion Load (114.3ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (107.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 292ms (View: 38, DB: 441) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (101.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (104.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 15:24:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (101.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 15:25:36) [GET]
+  [4;36;1mConversion Load (103.1ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (102.0ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (102.8ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (103.1ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (101.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (101.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (101.6ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 797ms (View: 55, DB: 918) | 200 OK [http://localhost/]
+  [4;36;1mSQL (102.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 15:25:37) [GET]
+  [4;36;1mConversion Load (103.4ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (103.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 275ms (View: 39, DB: 411) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 15:25:38) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (105.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 15:27:56) [GET]
+  [4;36;1mConversion Load (106.8ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (108.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (105.8ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (106.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (107.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (105.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 824ms (View: 52, DB: 958) | 200 OK [http://localhost/]
+  [4;36;1mSQL (108.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 15:27:58) [GET]
+  [4;36;1mConversion Load (110.1ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (107.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 283ms (View: 37, DB: 433) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (107.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (111.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 15:27:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (100.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-19 15:28:24) [GET]
+  [4;36;1mConversion Load (101.3ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (102.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (103.8ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (102.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (102.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (101.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (100.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 784ms (View: 44, DB: 918) | 200 OK [http://localhost/]
+  [4;36;1mSQL (107.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-19 15:28:26) [GET]
+  [4;36;1mConversion Load (107.7ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (107.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 283ms (View: 39, DB: 429) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (103.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 15:28:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-19 15:28:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 11:05:42) [GET]
+  [4;36;1mConversion Load (111.7ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (119.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (107.6ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (122.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (106.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 1280ms (View: 200, DB: 993) | 200 OK [http://localhost/]
+  [4;36;1mSQL (107.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (112.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 11:05:44) [GET]
+  [4;36;1mConversion Load (108.1ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.9ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 376ms (View: 114, DB: 437) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (105.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:05:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#about (for 127.0.0.1 at 2010-05-21 11:45:22) [GET]
+Rendering template within layouts/application
+Rendering welcome/about
+Completed in 539ms (View: 531, DB: 212) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (101.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 11:45:23) [GET]
+  [4;36;1mConversion Load (103.4ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (103.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 414ms (View: 146, DB: 410) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (107.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:45:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:45:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (100.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#api (for 127.0.0.1 at 2010-05-21 11:45:29) [GET]
+Rendering template within layouts/application
+Rendering welcome/api
+Completed in 143ms (View: 135, DB: 202) | 200 OK [http://localhost/api]
+  [4;36;1mSQL (111.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 11:45:30) [GET]
+  [4;36;1mConversion Load (108.3ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 355ms (View: 53, DB: 434) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (100.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:45:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (100.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#about (for 127.0.0.1 at 2010-05-21 11:56:33) [GET]
+Rendering template within layouts/application
+Rendering welcome/about
+Completed in 48ms (View: 41, DB: 201) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (107.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (127.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 11:56:34) [GET]
+  [4;36;1mConversion Load (108.0ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.5ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 289ms (View: 41, DB: 451) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (104.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:56:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (101.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:56:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (100.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#about (for 127.0.0.1 at 2010-05-21 11:57:46) [GET]
+Rendering template within layouts/application
+Rendering welcome/about
+Completed in 18ms (View: 11, DB: 201) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (102.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (118.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 11:57:47) [GET]
+  [4;36;1mConversion Load (102.7ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (102.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 295ms (View: 41, DB: 427) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (103.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:57:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (100.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:57:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#about (for 127.0.0.1 at 2010-05-21 11:58:34) [GET]
+Rendering template within layouts/application
+Rendering welcome/about
+Completed in 18ms (View: 11, DB: 213) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (101.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 11:58:35) [GET]
+  [4;36;1mConversion Load (102.0ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (102.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 272ms (View: 38, DB: 406) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (101.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:58:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (100.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#about (for 127.0.0.1 at 2010-05-21 11:58:45) [GET]
+Rendering template within layouts/application
+Rendering welcome/about
+Completed in 18ms (View: 11, DB: 201) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (102.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 11:58:46) [GET]
+  [4;36;1mConversion Load (102.7ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (102.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 275ms (View: 39, DB: 409) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (101.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:58:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:58:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#about (for 127.0.0.1 at 2010-05-21 11:59:06) [GET]
+Rendering template within layouts/application
+Rendering welcome/about
+Completed in 18ms (View: 11, DB: 212) | 200 OK [http://localhost/about]
+  [4;36;1mSQL (103.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 11:59:07) [GET]
+  [4;36;1mConversion Load (103.2ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (104.0ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 274ms (View: 37, DB: 413) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (105.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (105.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:59:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (101.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 11:59:17) [GET]
+  [4;36;1mConversion Load (101.8ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (101.9ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (101.4ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (101.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (100.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (101.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (101.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 800ms (View: 64, DB: 913) | 200 OK [http://localhost/]
+  [4;36;1mSQL (108.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 11:59:19) [GET]
+  [4;36;1mConversion Load (108.5ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 276ms (View: 34, DB: 432) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (105.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 11:59:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/log4javascript.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (101.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:00:06) [GET]
+  [4;36;1mConversion Load (101.5ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (101.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (101.2ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (101.5ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (100.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (101.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (101.2ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 799ms (View: 64, DB: 911) | 200 OK [http://localhost/]
+  [4;36;1mSQL (103.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:00:08) [GET]
+  [4;36;1mConversion Load (103.2ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (110.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 286ms (View: 40, DB: 419) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:04:48) [GET]
+  [4;36;1mConversion Load (107.5ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.8ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (107.3ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (108.0ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (107.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (107.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.8ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 851ms (View: 71, DB: 964) | 200 OK [http://localhost/]
+  [4;36;1mSQL (108.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:04:49) [GET]
+  [4;36;1mConversion Load (109.3ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 289ms (View: 39, DB: 432) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (101.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:05:49) [GET]
+  [4;36;1mConversion Load (102.6ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (102.7ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (101.7ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (102.7ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (101.7ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (102.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (101.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 785ms (View: 44, DB: 919) | 200 OK [http://localhost/]
+  [4;36;1mSQL (103.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (103.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:05:50) [GET]
+  [4;36;1mConversion Load (102.4ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (104.4ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 286ms (View: 44, DB: 414) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (111.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:06:27) [GET]
+  [4;36;1mConversion Load (107.0ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (106.4ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (107.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (106.9ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.1ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 825ms (View: 52, DB: 966) | 200 OK [http://localhost/]
+  [4;36;1mSQL (108.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (107.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:06:29) [GET]
+  [4;36;1mConversion Load (109.0ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.6ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 363ms (View: 42, DB: 434) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:06:43) [GET]
+  [4;36;1mConversion Load (107.3ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (113.0ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (107.5ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (108.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (107.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (106.7ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 826ms (View: 43, DB: 970) | 200 OK [http://localhost/]
+  [4;36;1mSQL (103.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:06:45) [GET]
+  [4;36;1mConversion Load (103.5ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (103.6ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 281ms (View: 40, DB: 414) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (100.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:07:57) [GET]
+  [4;36;1mConversion Load (101.4ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (102.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (101.2ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (101.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (101.2ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (100.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (101.6ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 788ms (View: 53, DB: 912) | 200 OK [http://localhost/]
+  [4;36;1mSQL (107.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:07:58) [GET]
+  [4;36;1mConversion Load (108.0ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (108.0ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 289ms (View: 40, DB: 430) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:08:39) [GET]
+  [4;36;1mConversion Load (112.3ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (108.6ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (107.0ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (107.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (106.8ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (107.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (107.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 841ms (View: 59, DB: 969) | 200 OK [http://localhost/]
+  [4;36;1mSQL (102.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (103.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:08:41) [GET]
+  [4;36;1mConversion Load (103.0ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (103.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 350ms (View: 112, DB: 413) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (106.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (108.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 12:08:42) [POST]
+  Parameters: {"layout"=>"HttpPostDataLayout", "timestamp"=>"1274436521896", "level"=>"INFO", "url"=>"http://localhost:3000/", "logger"=>"[anonymous]", "message"=>"Hello world!"}
+
+ActionController::RoutingError (No route matches "/javascript/log.text" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (106.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (109.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:09:00) [GET]
+  [4;36;1mConversion Load (108.2ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (108.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (107.2ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (107.9ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (107.7ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (107.1ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (108.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 835ms (View: 54, DB: 970) | 200 OK [http://localhost/]
+  [4;36;1mSQL (103.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:09:01) [GET]
+  [4;36;1mConversion Load (107.0ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (103.1ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 282ms (View: 40, DB: 416) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (104.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (104.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 12:09:02) [POST]
+  Parameters: {"layout"=>"HttpPostDataLayout", "timestamp"=>"1274436542077", "level"=>"INFO", "url"=>"http://localhost:3000/", "logger"=>"[anonymous]", "message"=>"Hello world!"}
+
+ActionController::RoutingError (No route matches "/javascripts/log.text" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (101.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (103.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:09:10) [GET]
+  [4;36;1mConversion Load (102.7ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (102.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (101.8ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (102.4ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (101.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (102.4ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (103.2ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 796ms (View: 54, DB: 922) | 200 OK [http://localhost/]
+  [4;36;1mSQL (103.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:09:12) [GET]
+  [4;36;1mConversion Load (103.2ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (103.2ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 277ms (View: 40, DB: 412) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (102.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 12:09:13) [POST]
+  Parameters: {"layout"=>"HttpPostDataLayout", "timestamp"=>"1274436552337", "level"=>"INFO", "url"=>"http://localhost:3000/", "logger"=>"[anonymous]", "message"=>"Hello world!"}
+
+ActionController::RoutingError (No route matches "/javascripts/log.txt" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (115.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (112.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 12:09:17) [POST]
+  Parameters: {"layout"=>"HttpPostDataLayout", "timestamp"=>"1274436556256", "level"=>"INFO", "url"=>"http://localhost:3000/", "logger"=>"[anonymous]", "message"=>"Plus one"}
+
+ActionController::RoutingError (No route matches "/javascripts/log.txt" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (102.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:09:33) [GET]
+  [4;36;1mConversion Load (105.3ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (103.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (102.2ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (102.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (101.6ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (101.5ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (101.6ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 853ms (View: 45, DB: 922) | 200 OK [http://localhost/]
+  [4;36;1mSQL (103.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:09:34) [GET]
+  [4;36;1mConversion Load (103.5ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (103.4ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 280ms (View: 40, DB: 413) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (102.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-21 12:09:35) [POST]
+  Parameters: {"layout"=>"HttpPostDataLayout", "timestamp"=>"1274436575018", "level"=>"INFO", "url"=>"http://localhost:3000/", "logger"=>"[anonymous]", "message"=>"Hello world!"}
+
+ActionController::RoutingError (No route matches "/javascripts/log.txt" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (107.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:10:02) [GET]
+  [4;36;1mConversion Load (107.3ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (107.7ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (107.7ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (109.6ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (108.7ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (107.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (106.8ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 839ms (View: 56, DB: 968) | 200 OK [http://localhost/]
+  [4;36;1mSQL (104.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:10:04) [GET]
+  [4;36;1mConversion Load (102.1ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (103.3ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 283ms (View: 46, DB: 412) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (102.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to txt (for 127.0.0.1 at 2010-05-21 12:10:05) [POST]
+  Parameters: {"layout"=>"HttpPostDataLayout", "timestamp"=>"1274436604571", "level"=>"INFO", "url"=>"http://localhost:3000/", "id"=>"log", "logger"=>"[anonymous]", "message"=>"Hello world!"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered rescues/_trace (71.0ms)
+Rendered rescues/_request_and_response (20.2ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (101.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (101.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2010-05-21 12:10:17) [GET]
+  [4;36;1mConversion Load (101.8ms)[0m   [0;1mSELECT * FROM `conversions` ORDER BY category_id[0m
+  [4;35;1mConversion Columns (102.5ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+  [4;36;1mConversion Load (101.5ms)[0m   [0;1mSELECT * FROM `conversions` WHERE (`conversions`.`slug` = 'co2') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering welcome/index
+  [4;35;1mCategory Columns (102.1ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mCategory Load (101.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 1) [0m
+  [4;36;1mCategory Load (101.3ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 2) [0m
+  [4;35;1mCategory Load (101.7ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `categories` WHERE (`categories`.`id` = 3) [0m
+Completed in 857ms (View: 53, DB: 915) | 200 OK [http://localhost/]
+  [4;36;1mSQL (104.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#data to js (for 127.0.0.1 at 2010-05-21 12:10:19) [GET]
+  [4;36;1mConversion Load (103.5ms)[0m   [0;1mSELECT * FROM `conversions` [0m
+  [4;35;1mConversion Columns (102.5ms)[0m   [0mSHOW FIELDS FROM `conversions`[0m
+Rendering conversion/data
+Completed in 278ms (View: 41, DB: 413) | 200 OK [http://localhost/data.js]
+  [4;36;1mSQL (103.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (102.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to txt (for 127.0.0.1 at 2010-05-21 12:10:20) [POST]
+  Parameters: {"layout"=>"HttpPostDataLayout", "timestamp"=>"1274436619395", "level"=>"INFO", "url"=>"http://localhost:3000/", "id"=>"log", "logger"=>"[anonymous]", "message"=>"Hello world!"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered rescues/_trace (68.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (100.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (100.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ConversionController#show to txt (for 127.0.0.1 at 2010-05-21 12:21:24) [POST]
+  Parameters: {"layout"=>"HttpPostDataLayout", "timestamp"=>"1274437283380", "level"=>"INFO", "url"=>"http://localhost:3000/", "id"=>"log", "logger"=>"[anonymous]", "message"=>"Plus one"}
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+
+Rendered rescues/_trace (96.5ms)
+Rendered rescues/_request_and_response (9.0ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (106.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (106.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (117.7ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (144.9ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateConversions (20090911184213)
+Migrating to CreateCategories (20090911184225)
+Migrating to ChangeCarbonToFloat (20090911221612)
+Migrating to AddColorToCategories (20090912034651)
+Migrating to Logging (20100521102640)
+  [4;36;1mSQL (335.8ms)[0m   [0;1mCREATE TABLE `logs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `content` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (110.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100521102640')[0m
+  [4;36;1mSQL (106.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (109.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (105.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (120.8ms)[0m   [0mSHOW FIELDS FROM `categories`[0m
+  [4;36;1mSQL (106.9ms)[0m   [0;1mdescribe `categories`[0m
+  [4;35;1mSQL (106.7ms)[0m   [0mSHOW KEYS FROM `categories`[0m
+  [4;36;1mSQL (107.2ms)[0m   [0;1mSHOW FIELDS FROM `conversions`[0m
+  [4;35;1mSQL (109.3ms)[0m   [0mdescribe `conversions`[0m
+  [4;36;1mSQL (106.4ms)[0m   [0;1mSHOW KEYS FROM `conversions`[0m
+  [4;35;1mSQL (116.6ms)[0m   [0mSHOW FIELDS FROM `logs`[0m
+  [4;36;1mSQL (111.1ms)[0m   [0;1mdescribe `logs`[0m
+  [4;35;1mSQL (106.2ms)[0m   [0mSHOW KEYS FROM `logs`[0m
