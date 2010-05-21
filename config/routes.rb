@@ -36,11 +36,12 @@ ActionController::Routing::Routes.draw do |map|
   # See how all your routes lay out with "rake routes"
   map.connect '/about', :controller => 'welcome', :action => 'about'
   map.connect '/api', :controller => 'welcome', :action => 'api'
+  map.connect '/log', :controller => 'log', :action => 'save'
+  
   map.conversions '/all.:format', :controller => 'conversion', :action => 'index'
   map.conversions '/data.:format', :controller => 'conversion', :action => 'data'
   map.conversions '/:id.:format', :controller => 'conversion', :action => 'show'
-  map.connect '/log', :controller => 'log', :action => 'save'
-
+  
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.

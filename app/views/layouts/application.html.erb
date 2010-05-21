@@ -12,10 +12,9 @@
   <script type="text/javascript" src="/javascripts/log4javascript.js"></script>
   <script type="text/javascript">
 	var log = log4javascript.getLogger();
-	var ajaxAppender = new log4javascript.AjaxAppender("log.txt");
+	var ajaxAppender = new log4javascript.AjaxAppender("http://localhost:3000/log");
 	log.addAppender(ajaxAppender);
-	log.info("Hello world!");
-	
+	log.info("New session");
   	</script>
 
 	
@@ -33,7 +32,7 @@
   </div>
   <%= yield %>
   </div>
-
+<!--
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -42,6 +41,6 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 try {
 var pageTracker = _gat._getTracker("UA-1465382-18");
 pageTracker._trackPageview();
-} catch(err) {}</script>
+} catch(err) {}</script> -->
 </body>
 </html>

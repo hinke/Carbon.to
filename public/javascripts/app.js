@@ -38,7 +38,6 @@ $(document).ready(function() {
       conv.find(".number").html(amount);
       converter.paint_left(true);
     }
-	log.info("Plus one");
   });
   
   $("ul.add-subtract li.subtract").bind("click", function(){
@@ -150,7 +149,7 @@ Carbon.Converter.prototype = {
   },
   
   left_co2:function(){
-    return this.left_amount()*this.left_data().carbon
+    return this.left_amount()*this.left_data().carbon;
   },
 
 
@@ -169,7 +168,7 @@ Carbon.Converter.prototype = {
   },
   
   right_co2:function(){
-    return this.right_amount()*this.right_data().carbon
+    return this.right_amount()*this.right_data().carbon;
   },
     
   paint_left: function(recalculate){
@@ -196,6 +195,7 @@ Carbon.Converter.prototype = {
     } 
     
     unit.html(this.conversions[container.attr("id")].unit);
+	log.info(this.left_amount().toString() + " " + this.left_data().slug + "; " + this.right_amount().toString() + " " + this.right_data().slug +";" );
   },
 
   paint_right: function(recalculate){
@@ -204,6 +204,7 @@ Carbon.Converter.prototype = {
     var unit = container.find('.unit');
     var html_amount = '';
     
+	
     if(recalculate){
       var amount = Math.round(this.calculate_amount(this.right_data().slug,this.left_co2()));
       var do_spin = (amount != this.right_amount());
@@ -222,6 +223,7 @@ Carbon.Converter.prototype = {
     }
 
     unit.html(this.conversions[container.attr("id")].unit);
+	log.info(this.left_amount().toString() + " " + this.left_data().slug + "; " + this.right_amount().toString() + " " + this.right_data().slug +";" );
   },
   
   font_size:function(digits){

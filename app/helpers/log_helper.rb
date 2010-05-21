@@ -1,2 +1,2 @@
-module LogsHelper
+module LogHelper
 end
