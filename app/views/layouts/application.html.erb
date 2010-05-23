@@ -12,10 +12,9 @@
   <script type="text/javascript" src="/javascripts/log4javascript.js"></script>
   <script type="text/javascript">
 	var log = log4javascript.getLogger();
-	var ajaxAppender = new log4javascript.AjaxAppender("http://carbon.to/log");
+	var ajaxAppender = new log4javascript.AjaxAppender("/log");
 	log4javascript.logLog.setQuietMode(true);
 	log.addAppender(ajaxAppender);
-	log.info("New session");
   	</script>
 
 	
