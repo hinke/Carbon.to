@@ -7,7 +7,6 @@ $(document).ready(function() {
   
   converter = new Carbon.Converter(conversions, index);
   converter.paint_left(true);
-  
 
   //Expand the conversion drawer
   $(".toggle-conversions").bind("click", function(){
@@ -22,7 +21,7 @@ $(document).ready(function() {
       conversions.addClass("opened");
       $(this).addClass("opened");
     }
-  })
+  });
   
   // Add and subtract
   $("ul.add-subtract li.add").bind("click", function(){
@@ -66,6 +65,7 @@ $(document).ready(function() {
         converter.paint_left(false);
         converter.paint_right(true);      
       }
+
     }
   });
 
@@ -192,10 +192,11 @@ Carbon.Converter.prototype = {
       }
       number.css('font-size',this.font_size(amount.toString().length));
       number.css('padding-top',this.font_padding(amount.toString().length));
+
     } 
     
     unit.html(this.conversions[container.attr("id")].unit);
-	log.info(this.left_amount().toString() + " " + this.left_data().slug + "; " + this.right_amount().toString() + " " + this.right_data().slug +";" );
+	log.info(this.left_data().slug + " in " + this.right_data().slug);
   },
 
   paint_right: function(recalculate){
@@ -223,7 +224,8 @@ Carbon.Converter.prototype = {
     }
 
     unit.html(this.conversions[container.attr("id")].unit);
-	log.info(this.left_amount().toString() + " " + this.left_data().slug + "; " + this.right_amount().toString() + " " + this.right_data().slug +";" );
+		
+	log.info(this.left_data().slug + " in " + this.right_data().slug);
   },
   
   font_size:function(digits){
