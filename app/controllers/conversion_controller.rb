@@ -1,5 +1,5 @@
 class ConversionController < ApplicationController
-  caches_page :data
+  #caches_page :data
     
   def index
     @all = Conversion.all
