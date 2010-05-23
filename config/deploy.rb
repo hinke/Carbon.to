@@ -4,7 +4,7 @@ set :application, "carbon.to"
 
 default_run_options[:pty] = true
 set :scm_passphrase, "converter" #This is your custom users password
-set :repository,  "git@github.com:hinke/Carbon.to.git"
+set :repository,  "git@github.com:zapico/Carbon.to.git"
 set :branch, "master"
 set :scm, :git
 
