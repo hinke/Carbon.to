@@ -1,0 +1,11 @@
+<div id="info">
+<%= image_tag @grafico, :alt => 'foo' %><br>
+</div>
+<div id="right_column">
+	<center>
+	<h1><%= @total %><small> interactions</small></h1>
+	<h1><%= @total_users %><small> users</small></h1>
+	<h1><%= (@total/@total_users).to_i %> <small>interaction per user</small></h1>
+	</center>
+		<p><center>This are some statistics from how users are interacting with carbon.to. It doesn't take into account the random comparison that is showed first. The data include usage from May 23rd 2010 and ahead.</center></p>
+</div>

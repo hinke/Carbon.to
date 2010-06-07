@@ -37,6 +37,8 @@ ActionController::Routing::Routes.draw do |map|
   map.connect '/about', :controller => 'welcome', :action => 'about'
   map.connect '/api', :controller => 'welcome', :action => 'api'
   map.connect '/log', :controller => 'log', :action => 'save'
+  map.connect '/showlog', :controller => 'log', :action => 'show'
+  
   
   map.conversions '/all.:format', :controller => 'conversion', :action => 'index'
   map.conversions '/data.:format', :controller => 'conversion', :action => 'data'
