@@ -28,17 +28,40 @@ $(document).ready(function() {
     var conv = $(this).parent().parent()
     if(conv.attr("id") == "left"){
       var amount = converter.left_amount();
-      amount = amount + 1;
+      if (amount < 1){
+		amount = 1;
+	  }else{
+	  	amount = amount + 1;
+	  }
       conv.find(".number").html(amount);
       converter.paint_right(true);
     }else{
       var amount = converter.right_amount();
-      amount = amount + 1;
+      if (amount < 1){
+		amount = 1;
+	  }else{
+	  	amount = amount + 1;
+	  }
       conv.find(".number").html(amount);
       converter.paint_left(true);
     }
   });
   
+  $("ul.add-subtract li.r").bind("click", function(){
+    var conv = $(this).parent().parent()
+    if(conv.attr("id") == "left"){
+      var amount = converter.left_amount();
+      amount = 1;
+      conv.find(".number").html(amount);
+      converter.paint_right(true);
+    }else{
+      var amount = converter.right_amount();
+      amount = 1;
+      conv.find(".number").html(amount);
+      converter.paint_left(true);
+    }
+  });
+
   $("ul.add-subtract li.subtract").bind("click", function(){
     var conv = $(this).parent().parent()
     if(conv.attr("id") == "left"){
@@ -116,6 +139,10 @@ Carbon.Converter.prototype = {
   },
   random: function(){
     this.current = rand(this.index.length)
+	// Avoiding haveing 0 vs 0 or CO2 vs CO2
+	while ((this.current.right_amount() < 1) || (this.current.right_amount == this.current.left_amount)) {
+		this.current = rand(this.index.length)
+		};
     return this.conversions[this.index[this.current]];
   },
   next: function(){
@@ -143,7 +170,9 @@ Carbon.Converter.prototype = {
   
   left_amount:function(){
     amount = this.left().find('.number').html();
-    amount = amount.replace('&lt;','');
+	if (amount == "&lt;1"){
+		amount = "0";
+	};
     return parseInt(amount);
     
   },
@@ -163,7 +192,10 @@ Carbon.Converter.prototype = {
   
   right_amount:function(){
     var amount = this.right().find('.number').html();
-    amount = amount.replace('&lt;','');
+	if (amount == "&lt;1"){
+		amount = "0";
+	};
+    // amount = amount.replace('&lt;','');
     return parseInt(amount);
   },
   
@@ -179,7 +211,7 @@ Carbon.Converter.prototype = {
     
     if(recalculate){
       var amount = Math.round(this.calculate_amount(this.left_data().slug,this.right_co2()));
-      var do_spin = (amount != this.left_amount());
+      var do_spin = ((amount != this.left_amount()) && this.left_amount != 0 );
       if(amount == 0 && this.right_amount() != 0){
         html_amount = "&lt;1";
       }else{
@@ -208,14 +240,14 @@ Carbon.Converter.prototype = {
 	
     if(recalculate){
       var amount = Math.round(this.calculate_amount(this.right_data().slug,this.left_co2()));
-      var do_spin = (amount != this.right_amount());
+      var do_spin = ((amount != this.right_amount()) && this.right_amount != 0 );
       if(amount == 0 && this.left_amount() != 0){
         html_amount = "&lt;1";
       }else{
         html_amount = amount.toString();
       }
       if (do_spin){
-        this.spin_number(number, html_amount, amount.toString().length);
+		this.spin_number(number, html_amount, amount.toString().length);
       }else{
         number.html(html_amount);
       }

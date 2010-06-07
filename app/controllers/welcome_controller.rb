@@ -9,6 +9,9 @@ class WelcomeController < ApplicationController
     @co2.amount = co2
     
     @random = @all.rand
+    if @random.amount < 1 then
+      @random = @all.rand
+    end
   end
 
   def about

@@ -12,6 +12,8 @@ h1{
 #container{
   position: relative;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   width: 980px;
 }
 
@@ -100,16 +102,16 @@ h1{
   margin: 0;
   padding: 0;
   list-style:none;
-  width: 100px;
+  width: 150px;
 }
 
 #left ul.add-subtract{
   top:8px;
-  left: 327px;
+  left: 292px;
 }
 #right ul.add-subtract{
   top:8px;
-  left: 327px;
+  left: 292px;
 }
 
 .converter ul.add-subtract li{
@@ -134,6 +136,10 @@ h1{
   background: #ACACAC url(/images/subtract.png) no-repeat 6px 6px;
   
 }
+.converter ul.add-subtract li.r{
+  background: #ACACAC url(/images/r.png) no-repeat 6px 6px;
+  
+}
 
 .converter ul.add-subtract li.add:hover{
   background: #d1d1d1 url(/images/add.png) no-repeat 6px 6px !important;
@@ -143,7 +149,10 @@ h1{
   background: #d1d1d1 url(/images/subtract.png) no-repeat 6px 6px !important;
 
 }
+.converter ul.add-subtract li.r:hover{
+  background: #d1d1d1 url(/images/r.png) no-repeat 6px 6px !important;
 
+}
 .converter .inner-converter{
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
