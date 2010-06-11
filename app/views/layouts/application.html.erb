@@ -28,7 +28,12 @@
      <a href="/"><%= image_tag image, :alt => 'home', :border=> '0' %></a>
   </div>
   <div id="menu">
-	<p><a href="/about">About</a> | <a href="/api">API</a></p>
+	<div id="menutext">
+		<p><a href="/about">About</a> | <a href="/api">API</a> | </p>
+	</div>
+	<div id="kth">
+		<a href="http://kth.se" target="_blank"><img src="/images/kth_logo.png" alt="kth" border="0" height="44px"></a>
+	</div>
   </div>
   <%= yield %>
   </div>

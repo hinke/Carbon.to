@@ -47,6 +47,7 @@ $(document).ready(function() {
     }
   });
   
+  // Function for resetting to one
   $("ul.add-subtract li.r").bind("click", function(){
     var conv = $(this).parent().parent()
     if(conv.attr("id") == "left"){
@@ -54,11 +55,13 @@ $(document).ready(function() {
       amount = 1;
       conv.find(".number").html(amount);
       converter.paint_right(true);
+	  //log.info("Reset "+ this.left_data().slug);
     }else{
       var amount = converter.right_amount();
       amount = 1;
       conv.find(".number").html(amount);
       converter.paint_left(true);
+	  //log.info("Reset "+ this.right_data().slug);
     }
   });
 

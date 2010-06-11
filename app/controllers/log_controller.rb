@@ -7,6 +7,10 @@ class LogController < ApplicationController
     render :nothing => true 
   end
   def show
+    
+    # Cache for 12 hours
+    response.headers['Cache-Control'] = 'public, max-age=43200'
+    
     # Fetch all
     log = Log.all(:order => "session")
     

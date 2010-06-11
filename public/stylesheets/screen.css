@@ -40,6 +40,16 @@ h1{
 #menu p a:hover{
 	color: #333;
 }
+#menutext{
+	float:left;
+	margin-right:10px;
+}
+#kth{
+	float:right;
+	top:0px;
+	right:0px;
+	margin-top:7px;
+}
 #info p{
 	font-size: 16px;
 }
